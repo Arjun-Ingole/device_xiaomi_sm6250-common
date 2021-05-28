@@ -31,3 +31,4 @@ debug.hwui.renderer=skiavk
 
 # IORap
 ro.iorapd.enable=true
+iorapd.perfetto.enable=true
