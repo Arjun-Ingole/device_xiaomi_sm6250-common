@@ -1,6 +1,6 @@
 # Battery
-/vendor/bin/batteryd		u:object_r:batteryd_exec:s0
-/vendor/bin/batterysecret		u:object_r:batterysecret_exec:s0
+/vendor/bin/batteryd		                u:object_r:batteryd_exec:s0
+/vendor/bin/batterysecret		        u:object_r:batterysecret_exec:s0
 /mnt/vendor/persist/subsys(/.*)?                u:object_r:persist_subsys_file:s0
 
 # Biometric
@@ -18,8 +18,11 @@
 /dev/spidev7.1                                  u:object_r:spidev_device:s0
 /dev/spidev0.1					u:object_r:spidev_device:s0
 
-#Light
-/vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sm6250    u:object_r:hal_light_default_exec:s0
+# Light
+/vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sm6250     u:object_r:hal_light_default_exec:s0
 
 # Sys Files (wakeup)
-/sys/devices/virtual/diag/diag/wakeup[0-99]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/diag/diag/wakeup[0-99]+(/.*)?                      u:object_r:sysfs_wakeup:s0
+
+# Power
+/vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr      u:object_r:hal_power_default_exec:s0
