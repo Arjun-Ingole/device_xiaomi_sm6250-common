@@ -157,9 +157,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Platform
 TARGET_BOARD_PLATFORM := atoll
 
-# Power
-TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
-
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
