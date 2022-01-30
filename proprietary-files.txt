@@ -1037,10 +1037,6 @@ etc/permissions/privapp-permissions-qti.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 
-# Perf
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
-
 # Peripheral
 vendor/bin/pm-proxy
 vendor/bin/pm-service
